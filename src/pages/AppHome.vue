@@ -1,10 +1,11 @@
 <template>
     <div>
-      <h1>Hello</h1>
+      <!-- <h1>Projects</h1> -->
     </div>
   </template>
   
   <script>
+  import axios from "axios";
   import { store } from "../store";
   export default {
     name: 'AppHome',
