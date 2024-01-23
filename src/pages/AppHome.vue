@@ -1,20 +1,36 @@
 <template>
     <div>
-    
+      <h1>Hello</h1>
     </div>
-</template>
-
-<script>
-export default {
+  </template>
+  
+  <script>
+  import { store } from "../store";
+  export default {
     name: 'AppHome',
-    setup () {
+    data() {
+      return {
+  
+      }
+    },
+    component: {
         
-
-        return {}
+    },
+    methods: {
+    },
+    created() {
+  
+    },
+    mounted() {
+      axios.get('https://jsonplaceholder.typicode.com/todos/1').then((response) => {
+  
+      }).catch((error) => {
+      })
     }
-}
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+  
+  }
+  </script>
+  
+  <style lang="scss" scoped>
+  @use "../assets/style/partials/_variables.scss" as *;
+  </style>

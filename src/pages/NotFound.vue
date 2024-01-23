@@ -1,19 +1,14 @@
 <template>
-    <div>
-
-    </div>
-</template>
-
-<script>
-export default {
-    data () {
-        
-
-        return {}
-    }
-}
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+    <h1>Not Found !!!</h1>
+ </template>
+ 
+ <script>
+     export default {
+         name: 'NotFound'
+         
+     }
+ </script>
+ 
+ <style lang="scss" scoped>
+ 
+ </style>

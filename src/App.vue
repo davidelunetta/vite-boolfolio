@@ -1,27 +1,22 @@
 <template>
-  <div>
-    router
-  </div>
+    <AppHeader />
+    <router-view></router-view> 
 </template>
 
 <script>
-import axios from 'axios';
-import { store } from './store';
+
+import AppHeader from "./components/AppHeader.vue";
+import { store } from '../src/store';
+
 export default {
   name: 'App',
-  data () {
-    
-
+  data() {
     return {
-      store,
-    };
+
+    }
   },
-  methods: {
-    getApiTest(){
-      axios.get(this.store.apiUrl + "projects").then((res) => {
-        console.log(res.data)
-      });
-    },
+  components: {
+    AppHeader,
   },
   
 }

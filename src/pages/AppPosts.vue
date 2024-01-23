@@ -16,7 +16,7 @@ export default {
     },
     methods: {
         getAllPosts(){
-            axios.get(`${this.store.apiBaseUrl}posts`).then((res)=>{
+            axios.get(`${this.store.apiBaseUrl}projects`).then((res)=>{
                 console.log(res.data);
             }).catch((err)=>{
 

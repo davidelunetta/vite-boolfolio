@@ -1,8 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
-import AppHomeVue from "./pages/AppHome.vue";
+import AppHome from "./pages/AppHome.vue";
+import AppPosts from "./pages/AppPosts.vue";
+import SinglePost from "./pages/SinglePost.vue";
+import NotFound from "./pages/NotFound.vue";
+
+
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(),
     routes:[
         {
             path: "/",
@@ -25,6 +30,5 @@ const router = createRouter({
             component: NotFound
           } 
     ]
-}
-
-)
+});
+export default router;
