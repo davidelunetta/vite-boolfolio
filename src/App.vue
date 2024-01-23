@@ -7,6 +7,7 @@
 
 import AppHeader from "./components/AppHeader.vue";
 import { store } from '../src/store';
+import AppPosts from "./pages/AppPosts.vue";
 
 export default {
   name: 'App',
@@ -17,7 +18,8 @@ export default {
   },
   components: {
     AppHeader,
-  },
+    AppPosts
+},
   
 }
 </script>
